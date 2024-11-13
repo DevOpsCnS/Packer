@@ -44,7 +44,7 @@ build {
   ]
   provisioner "shell" {
     environment_vars = [
-      "var=Welcome to DevOps Consultancy n Solutions",
+      "var=Welcome to DevOps Consultancy n Solutions. This is an example to show how to use variables in a packer build.",
     ]
     inline = [
       "echo Installing Apache2",
