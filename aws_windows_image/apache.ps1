@@ -9,4 +9,4 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/in
 choco install apache-httpd -y --params '"/installLocation:C:\Apache24 /port:8080"'
 
 # Verify installation
-#& "C:\Apache24\bin\httpd.exe" -v
+& "C:\Apache24\Apache24\bin\httpd.exe" -v

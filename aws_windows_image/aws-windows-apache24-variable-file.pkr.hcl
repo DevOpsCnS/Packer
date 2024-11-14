@@ -7,11 +7,26 @@ packer {
   }
 }
 
+variable "region" {
+  type = string
+}
+
+variable "communicator" {}
+
+variable "instancetype" {
+  type = string
+  default = "t2.small"
+}
+
+locals {
+  timestamp = regex_replace(timestamp(), "[- TZ:]", "")
+}
+
 source "amazon-ebs" "windows" {
-  ami_name      = "build-your-own-windows-image"
-  communicator  = "winrm"
-  instance_type = "t2.small"
-  region        = "eu-west-1"
+  ami_name      = "build-your-own-windows-image-${local.timestamp}"
+  communicator  = "${var.communicator}"
+  instance_type = "${var.instancetype}"
+  region        = "${var.region}"
   source_ami_filter {
     filters = {
       name                = "Windows_Server-2019-English-Full-Base-2024.10.09"

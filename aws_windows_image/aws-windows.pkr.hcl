@@ -10,7 +10,7 @@ packer {
 source "amazon-ebs" "windows" {
   ami_name      = "build-your-own-windows-image"
   communicator  = "winrm"
-  instance_type = "t3a.nano"
+  instance_type = "t2.micro"
   region        = "eu-west-1"
   source_ami_filter {
     filters = {
