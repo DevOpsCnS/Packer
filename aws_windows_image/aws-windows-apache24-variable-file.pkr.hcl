@@ -37,7 +37,7 @@ source "amazon-ebs" "windows" {
     owners      = ["801119661308"] # AWS account ID of the AMI owner
   }
   user_data_file = "./bootstrap_win.txt"
-  winrm_password = "SuperS3cr3t!!!!"
+  winrm_password = "XXXXXXXXXX"
   winrm_username = "Administrator"
 }
 
