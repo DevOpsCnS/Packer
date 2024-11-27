@@ -13,7 +13,7 @@ source "azure-arm" "packer_build_image" {
     task = "Golden Image Build"
   }
   client_id                         = "7f664349-26b1-4804-9314-6ad265c75906"
-  client_secret                     = "skc8Q~P8eHCYZBDKLfNHEP6gYaEm5_beKBS6Ca09"
+  client_secret                     = "xxxxxx-xxxxxxx-xxxxxxxx-xxxxxx"
   subscription_id                   = "c5ee34df-9eee-4ca3-ab47-1eda605e102c"
   tenant_id                         = "c2242504-72f3-43a6-b016-11802e615d26"
 
