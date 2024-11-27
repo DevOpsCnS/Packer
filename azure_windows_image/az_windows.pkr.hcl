@@ -12,10 +12,10 @@ source "azure-arm" "packer_build_image" {
     dept = "DevOps"
     task = "Golden Image Build"
   }
-  client_id                         = "7f664349-26b1-4804-9314-6ad265c75906"
+  client_id                         = "xxxxxx-xxxxxxx-xxxxxxxx-xxxxxx"
   client_secret                     = "xxxxxx-xxxxxxx-xxxxxxxx-xxxxxx"
-  subscription_id                   = "c5ee34df-9eee-4ca3-ab47-1eda605e102c"
-  tenant_id                         = "c2242504-72f3-43a6-b016-11802e615d26"
+  subscription_id                   = "xxxxxx-xxxxxxx-xxxxxxxx-xxxxxx"
+  tenant_id                         = "xxxxxx-xxxxxxx-xxxxxxxx-xxxxxx"
 
   image_offer                       = "WindowsServer"
   image_publisher                   = "MicrosoftWindowsServer"
